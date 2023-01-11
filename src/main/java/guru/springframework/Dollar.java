@@ -2,7 +2,7 @@ package guru.springframework;
 
 public class Dollar {
 
-    int amount;
+    private int amount;
 
     public Dollar(int amount) {
         this.amount = amount;
@@ -19,9 +19,4 @@ public class Dollar {
         Dollar dollar = (Dollar) o;
         return amount == dollar.amount;
     }
-
-//    @Override
-//    public int hashCode() {
-//        return Objects.hash(amount);
-//    }
 }
